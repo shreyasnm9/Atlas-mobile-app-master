@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerVertical="true"
+            android:id="@+id/img1"
+            android:layout_marginRight="5dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#ff000000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nametext"
+            android:text="Place Name:"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/img1"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/citytext"
+            android:text="City Name:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/img1"
+            android:layout_below="@id/nametext"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addresstext"
+            android:text="Address:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/img1"
+            android:layout_below="@id/citytext"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/pricetext"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addresstext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Price:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timetext"
+        android:text="Time:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/pricetext"
+        android:layout_below="@id/addresstext"
+        android:layout_marginLeft="40dp"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vegtext"
+            android:text="Veg:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/pricetext"
+            android:layout_above="@id/timetext"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:id="@+id/cusinetext"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timetext"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toRightOf="@id/pricetext"
+            android:text="Cusine:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Atlas2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="appBarLayoutStyle">@color/blue</item>
+        <item name="background">@color/white</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="android:textColor">@color/black</item>
+
+
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+</resources>
